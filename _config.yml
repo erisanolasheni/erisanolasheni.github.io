@@ -22,7 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/g-interject" # the subpath of your site, e.g. /blog
 url: "https://erisanolasheni.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dukog
-github_username:  lyubar
+github_username:  erisanolasheni
 
 # Build settings
 markdown: kramdown
@@ -79,5 +79,5 @@ defaults:
 #
 # We specify the directory for Jekyll so we can use @imports.
 sass:
-  sass_dir:          _scss
+  sass_dir:          /g-interject/_scss
   style:            :compressed
