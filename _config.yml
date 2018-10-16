@@ -82,3 +82,6 @@ defaults:
 sass:
   sass_dir:          _scss
   style:            :compressed
+
+repository:
+  GoJect/goject
