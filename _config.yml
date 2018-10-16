@@ -20,7 +20,6 @@ description: >- # this means to ignore newlines until "host:"
   line in _config.yml. It will appear in your document head meta (for
 
 # root: "/go-interject" # the subpath of your site, e.g. /blog
-host: "https://goject.github.io/goject/" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_username: dukog
 github_username:  erisanolasheni
