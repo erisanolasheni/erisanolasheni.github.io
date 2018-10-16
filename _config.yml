@@ -24,6 +24,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dukog
 github_username:  lyubar
 
+root: /g-interject
+
 # Build settings
 markdown: kramdown
 theme: minima
