@@ -27,7 +27,7 @@ root: /g-interject
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
