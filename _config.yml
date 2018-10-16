@@ -80,3 +80,7 @@ defaults:
 sass:
   sass_dir:          _scss
   style:            :compressed
+
+
+repository:
+  https://github.com/GoJect/goject.git
