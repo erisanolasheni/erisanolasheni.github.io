@@ -2,5 +2,48 @@
 layout: null
 ---
 var docstoc = {{ site.data.toc | jsonify }}
-alert('Hmmm'+docstoc)
-renderNav(docstoc);
+function renderNav(docstoc) {
+  for (i=0;i<docstoc.horizontalnav.length;i++)
+  {
+    if (docstoc.horizontalnav[i].node != "glossary")
+    {
+      currentSection = docstoc.horizontalnav[i].node;
+      // build vertical nav
+      var itsHere = findMyTopic(docstoc[docstoc.horizontalnav[i].node]);
+      if (itsHere || docstoc.horizontalnav[i].path == pageURL)
+      {
+        walkTree(docstoc[docstoc.horizontalnav[i].node]);
+      }
+    }
+    // build horizontal nav
+    outputHorzTabs.push('<li id="' + docstoc.horizontalnav[i].node + '"');
+    if (docstoc.horizontalnav[i].path==pageURL || docstoc.horizontalnav[i].node==sectionToHighlight)
+    {
+      outputHorzTabs.push(' class="active"');
+    }
+    outputHorzTabs.push('><a href="'+docstoc.horizontalnav[i].path+'">'+docstoc.horizontalnav[i].title+'</a></li>\n');
+  }
+  if (outputLetNav.length==0)
+  {
+    // didn't find the current topic in the standard TOC; maybe it's a collection;
+    for (var key in collectionsTOC)
+    {
+      var itsHere = findMyTopic(collectionsTOC[key]);
+      if (itsHere) {
+        walkTree(collectionsTOC[key]);
+        break;
+      }
+    }
+    // either glossary was true or no left nav has been built; default to glossary
+    // show pages tagged with term and highlight term in left nav if applicable
+    renderTagsPage()
+    for (var i=0;i<glossary.length;i++)
+    {
+      var highlightGloss = '';
+      if (tagToLookup) highlightGloss = (glossary[i].term.toLowerCase()==tagToLookup.toLowerCase()) ? ' class="active currentPage"' : '';
+      outputLetNav.push('<li><a'+highlightGloss+' href="/glossary/?term=' + glossary[i].term + '">'+glossary[i].term+'</a></li>');
+    }
+  }
+  document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
+  document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
+}renderNav(docstoc);
