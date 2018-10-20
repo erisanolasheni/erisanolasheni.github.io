@@ -482,6 +482,4 @@ window.onload = function() {
     //console.log("Keeping non-applicable elements hidden.");
   }
 };
-console.log(window.docsNav)
-
-renderNav(window.docsNav)
+// console.log(window.docsNav)
