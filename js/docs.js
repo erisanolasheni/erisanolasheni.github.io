@@ -139,13 +139,16 @@ function renderNav(docstoc) {
   {
     if (docstoc.horizontalnav[i].node != "glossary")
     {
-      console.log('yes!')
       currentSection = docstoc.horizontalnav[i].node;
       // build vertical nav
       var itsHere = findMyTopic(docstoc[docstoc.horizontalnav[i].node]);
       if (itsHere || docstoc.horizontalnav[i].path == pageURL)
       {
         walkTree(docstoc[docstoc.horizontalnav[i].node]);
+      }
+      else
+      {
+        console.log('no no no!')
       }
     }
     // build horizontal nav
