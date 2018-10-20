@@ -139,6 +139,7 @@ function renderNav(docstoc) {
   {
     if (docstoc.horizontalnav[i].node != "glossary")
     {
+      console.log('yes!')
       currentSection = docstoc.horizontalnav[i].node;
       // build vertical nav
       var itsHere = findMyTopic(docstoc[docstoc.horizontalnav[i].node]);
@@ -166,7 +167,6 @@ function renderNav(docstoc) {
         break;
       }
     }
-    console.log('glossary', glossary)
     // either glossary was true or no left nav has been built; default to glossary
     // show pages tagged with term and highlight term in left nav if applicable
     renderTagsPage()
