@@ -1,4 +1,3 @@
-console.log('docs.js')
 
 // Right nav highlighting
 var sidebarObj = (document.getElementsByClassName("sidebar")[0]) ? document.getElementsByClassName("sidebar")[0] : document.getElementsByClassName("sidebar-home")[0]
@@ -312,8 +311,8 @@ $(".navbar-toggle").click(function(){
 var navHeight = $('.navbar').outerHeight(true) + 80;
 
 $(document.body).scrollspy({
-	target: '#leftCol',
-	offset: navHeight
+  target: '#leftCol',
+  offset: navHeight
 });
 
 function loadHash(hashObj)
@@ -478,3 +477,4 @@ window.onload = function() {
     //console.log("Keeping non-applicable elements hidden.");
   }
 };
+console.log('docs.js')

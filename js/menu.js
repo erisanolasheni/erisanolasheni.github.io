@@ -1,4 +1,3 @@
-console.log('menu.js')
 
 var metadata, glossary;
 var autoCompleteShowing = false;
@@ -270,3 +269,4 @@ function renderTagsPage()
     renderTopicsByTagTable(tagToLookup,"topicMatch",true);
   }
 }
+console.log('menu.js')
