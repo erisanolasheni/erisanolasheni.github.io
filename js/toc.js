@@ -1,13 +1,23 @@
 ---
 layout: null
 ---
-var docstoc = {{ site.data.toc | jsonify }}
+
+
+var collectionsTOC = new Array()
+collectionsTOC["library"] = [
+  
+]
+
 
 var outputHorzTabs = new Array();
 var outputLetNav = new Array();
 var totalTopics = 0;
 var currentSection;
 var sectionToHighlight;
+
+
+var docstoc = {{ site.data.toc | jsonify }}
+
 function findMyTopic(tree)
 {
   function processBranch(branch)
