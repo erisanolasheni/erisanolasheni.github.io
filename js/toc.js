@@ -149,8 +149,9 @@ function renderNav(docstoc) {
     }
   }
 
-  alert(outputLetNav)
+  // alert(outputLetNav)
   document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
   document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
 }
+alert(docstoc)
 renderNav(docstoc);
