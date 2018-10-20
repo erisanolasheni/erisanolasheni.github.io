@@ -146,11 +146,9 @@ function renderNav(docstoc) {
       {
         walkTree(docstoc[docstoc.horizontalnav[i].node]);
       }
-      else
-      {
-        console.log('no no no!')
-      }
     }
+
+    console.log(outputLetNav)
     // build horizontal nav
     outputHorzTabs.push('<li id="' + docstoc.horizontalnav[i].node + '"');
     if (docstoc.horizontalnav[i].path==pageURL || docstoc.horizontalnav[i].node==sectionToHighlight)
@@ -181,7 +179,7 @@ function renderNav(docstoc) {
     }
   }
   document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
-  document.getElementById('jsTOCLeftNav').innerHTML = 'wdwedw'
+  document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
 }
 
 function highlightRightNav(heading)
