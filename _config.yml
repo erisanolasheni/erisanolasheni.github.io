@@ -71,7 +71,7 @@ defaults:
       type: "pages"
     values:
       layout: custom
-      toc_min: 2
+      toc_min: 3
       toc_max: 3
       tree: true
 

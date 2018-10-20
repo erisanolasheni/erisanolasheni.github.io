@@ -1,5 +1,6 @@
 
 // Right nav highlighting
+
 var sidebarObj = (document.getElementsByClassName("sidebar")[0]) ? document.getElementsByClassName("sidebar")[0] : document.getElementsByClassName("sidebar-home")[0]
 var sidebarBottom = sidebarObj.getBoundingClientRect().bottom;
 var footerTop = document.getElementsByClassName("footer")[0].getBoundingClientRect().top;
@@ -479,3 +480,4 @@ window.onload = function() {
 };
 console.log('docs.js')
 
+renderNav(window.docsNav)
