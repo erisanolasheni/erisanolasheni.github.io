@@ -1,4 +1,4 @@
-alert('menu.js')
+console.log('menu.js')
 
 var metadata, glossary;
 var autoCompleteShowing = false;

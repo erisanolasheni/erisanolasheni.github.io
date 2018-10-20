@@ -1,5 +1,3 @@
-alert('toc.js')
-
 ---
 layout: null
 ---

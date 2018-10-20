@@ -1,5 +1,3 @@
-alert('archive.js')
-
 ---
 layout: null
 ---

@@ -1,5 +1,3 @@
-alert('anchorlinks.js')
-
 (function(d) {
 	"use strict";
 	var hs = d.getElementById("DocumentationText").querySelectorAll("H1, H2, H3"), h;

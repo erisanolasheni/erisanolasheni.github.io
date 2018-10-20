@@ -1,4 +1,4 @@
-alert('docs.js')
+console.log('docs.js')
 
 // Right nav highlighting
 var sidebarObj = (document.getElementsByClassName("sidebar")[0]) ? document.getElementsByClassName("sidebar")[0] : document.getElementsByClassName("sidebar-home")[0]
