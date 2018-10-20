@@ -135,6 +135,7 @@ function walkTree(tree)
   }
 }
 function renderNav(docstoc) {
+  console.log('docstoc', docstoc)
   for (i=0;i<docstoc.horizontalnav.length;i++)
   {
     if (docstoc.horizontalnav[i].node != "glossary")
@@ -144,6 +145,7 @@ function renderNav(docstoc) {
       var itsHere = findMyTopic(docstoc[docstoc.horizontalnav[i].node]);
       if (itsHere || docstoc.horizontalnav[i].path == pageURL)
       {
+        console.log('docstoc', docstoc[docstoc.horizontalnav[i].node])
         walkTree(docstoc[docstoc.horizontalnav[i].node]);
       }
     }
