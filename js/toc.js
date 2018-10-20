@@ -51,6 +51,18 @@ function renderTopicsByTagTable(tagToLookup,divID)
 }
 
 var tagToLookup;
+var metadata, glossary;
+var autoCompleteShowing = false;
+var displayingAutcompleteResults = new Array();
+var autoCompleteShowingID = 0;
+var lastSearch = "";
+var autoCompleteResultLimit = 3;
+var results = new Array();
+var scoreForTitleMatch = 10;
+var scoreForURLMatch = 5;
+var scoreForKeywordMatch = 3;
+var scoreForDescriptionMatch = 1
+
 function renderTagsPage()
 {
   if(window.location.pathname.indexOf("/glossary/")>-1 || window.location.pathname.indexOf("/search/")>-1)
@@ -142,7 +154,6 @@ function renderNav(docstoc) {
     // show pages tagged with term and highlight term in left nav if applicable
     renderTagsPage()
 
-    alert(glossary)
     for (var i=0;i<glossary.length;i++)
     {
       var highlightGloss = '';
