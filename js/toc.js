@@ -6,5 +6,5 @@ var docstoc = {{ site.data.toc | jsonify }}
 // console.log(renderNav);
 
 
-document.getElementById('jsTOCLeftNav').innerHTML = '<ul>wwww</ul>';
+document.getElementById('jsTOCLeftNav').innerHTML = JSON.strigify(docstoc);
 	
