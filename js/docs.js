@@ -135,7 +135,7 @@ function walkTree(tree)
   }
 }
 function renderNav(docstoc) {
-  console.log('docstoc', docstoc)
+  // console.log('docstoc', docstoc)
   for (i=0;i<docstoc.horizontalnav.length;i++)
   {
     if (docstoc.horizontalnav[i].node != "glossary")
@@ -145,7 +145,7 @@ function renderNav(docstoc) {
       var itsHere = findMyTopic(docstoc[docstoc.horizontalnav[i].node]);
       // if (itsHere || docstoc.horizontalnav[i].path == pageURL)
       // {
-        console.log('docstoc1112', docstoc[docstoc.horizontalnav[i].node])
+        // console.log('docstoc1112', docstoc[docstoc.horizontalnav[i].node])
         walkTree(docstoc[docstoc.horizontalnav[i].node]);
       // }
     }
@@ -483,3 +483,5 @@ window.onload = function() {
   }
 };
 // console.log(window.docsNav)
+
+renderNav(window.docsNav)
