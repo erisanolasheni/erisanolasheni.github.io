@@ -177,7 +177,7 @@ function renderNav(docstoc) {
     }
   }
   document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
-  document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
+  document.getElementById('jsTOCLeftNav').innerHTML = 'wdwedw'
 }
 
 function highlightRightNav(heading)
