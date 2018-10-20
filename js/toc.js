@@ -153,5 +153,5 @@ function renderNav(docstoc) {
   document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
   document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
 }
-alert(JSON.stringify(docstoc))
+// alert(JSON.stringify(docstoc))
 renderNav(docstoc);
