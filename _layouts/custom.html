@@ -287,6 +287,7 @@
 	<!-- <script src="/js/anchorlinks.js"></script> -->
 	<script defer src="/js/menu.js"></script>
 	<script src="/js/jquery.js"></script>
+	<script defer src="/js/docs.js"></script>
 	<script async src="/js/toc.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
@@ -298,7 +299,6 @@
 	// In archives, we need to know the page root and we get it from JEKYLL_ENV in the jekyll build command
 	var jekyllEnv = '{{ jekyll.environment }}';
 	// If unset (in non-archive branches), defaults to "development". In that case, reset it to empty
-	alert(jekyllEnv)
 	if (jekyllEnv == 'development') {
 		jekyllEnv = '';
 	}
@@ -309,7 +309,6 @@
 	<script defer src="/js/metadata.js"></script>
 	<script src="/js/glossary.js"></script>
 	<script src="/js/collections_tocs.js"></script>
-	<script defer src="/js/docs.js"></script>
 	<script language="javascript">
 	jQuery(document).ready(function(){
 				hookupTOCEvents();
