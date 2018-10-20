@@ -3,6 +3,8 @@ layout: null
 ---
 var docstoc = {{ site.data.toc | jsonify }}
 
-console.log(renderNav(docstoc));
+// console.log(renderNav);
 
-document.getElementById('jsTOCHorizontal').innerHTML = 'wswss';
+
+document.getElementById('jsTOCLeftNav').innerHTML = '<ul>wwww</ul>';
+	

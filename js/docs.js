@@ -478,4 +478,4 @@ window.onload = function() {
   }
 };
 console.log('docs.js')
-console.log(renderNav)
+
