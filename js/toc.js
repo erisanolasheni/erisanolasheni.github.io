@@ -2,6 +2,36 @@
 layout: null
 ---
 var docstoc = {{ site.data.toc | jsonify }}
+
+var outputHorzTabs = new Array();
+var outputLetNav = new Array();
+var totalTopics = 0;
+var currentSection;
+var sectionToHighlight;
+function findMyTopic(tree)
+{
+  function processBranch(branch)
+  {
+    for (var k=0;k<branch.length;k++)
+    {
+      if (branch[k].section) {
+        processBranch(branch[k].section);
+      } else {
+        if (branch[k].path == pageURL && !branch[k].nosync)
+        {
+          // console.log(branch[k].path + ' was == ' + pageURL)
+          thisIsIt = true;
+          break;
+        } else {
+          // console.log(branch[k].path + ' was != ' + pageURL)
+        }
+      }
+    }
+  }
+  var thisIsIt = false;
+  processBranch(tree)
+  return thisIsIt;
+}
 function renderNav(docstoc) {
   for (i=0;i<docstoc.horizontalnav.length;i++)
   {
