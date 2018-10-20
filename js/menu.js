@@ -1,3 +1,5 @@
+alert('menu.js')
+
 var metadata, glossary;
 var autoCompleteShowing = false;
 var displayingAutcompleteResults = new Array();

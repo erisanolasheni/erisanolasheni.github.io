@@ -1,6 +1,8 @@
+
 ---
 layout: null
 ---
+alert('glossary.js')
 var glossary = [
 {% for entry in site.data.glossary %}
 {

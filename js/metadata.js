@@ -1,3 +1,5 @@
+alert('metadata.js')
+
 ---
 layout: null
 ---

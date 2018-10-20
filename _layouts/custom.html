@@ -285,6 +285,10 @@
 	</script>
 	{% endif %}
 	<!-- <script src="/js/anchorlinks.js"></script> -->
+	<script defer src="/js/menu.js"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
 	<script language="javascript">
 	// Default to assuming this is an archive and hiding some stuff
 	// See js/archive.js and js/docs.js for logic relating to this
@@ -298,17 +302,13 @@
 	}
 	var pageURL = jekyllEnv + '{{ page.url }}';
 	</script>
-	<script async src="/js/toc.js"></script>
-	<script defer src="/js/menu.js"></script>
-	<script src="/js/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<!-- Always include the archive.js, but it doesn't do much unless we are an archive -->
 	<script src="/js/archive.js"></script>
 	<script src="/js/stickyfill.min.js"></script>
 	<script defer src="/js/metadata.js"></script>
 	<script src="/js/glossary.js"></script>
 	<script src="/js/collections_tocs.js"></script>
 	<script defer src="/js/docs.js"></script>
+	<script defer src="/js/toc.js"></script>
 	<script language="javascript">
 	jQuery(document).ready(function(){
 				hookupTOCEvents();
