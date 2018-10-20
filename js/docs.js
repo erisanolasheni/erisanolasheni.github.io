@@ -145,7 +145,7 @@ function renderNav(docstoc) {
       var itsHere = findMyTopic(docstoc[docstoc.horizontalnav[i].node]);
       if (itsHere || docstoc.horizontalnav[i].path == pageURL)
       {
-        console.log('docstoc', docstoc[docstoc.horizontalnav[i].node])
+        console.log('docstoc1112', docstoc[docstoc.horizontalnav[i].node])
         walkTree(docstoc[docstoc.horizontalnav[i].node]);
       }
     }
