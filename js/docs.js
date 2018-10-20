@@ -174,7 +174,6 @@ function renderNav(docstoc) {
       outputLetNav.push('<li><a'+highlightGloss+' href="/glossary/?term=' + glossary[i].term + '">'+glossary[i].term+'</a></li>');
     }
   }
-  alert(outputLetNav)
   document.getElementById('jsTOCHorizontal').innerHTML = outputHorzTabs.join('');
   document.getElementById('jsTOCLeftNav').innerHTML = outputLetNav.join('');
 }
