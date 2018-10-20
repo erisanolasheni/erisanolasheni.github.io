@@ -143,11 +143,11 @@ function renderNav(docstoc) {
       currentSection = docstoc.horizontalnav[i].node;
       // build vertical nav
       var itsHere = findMyTopic(docstoc[docstoc.horizontalnav[i].node]);
-      if (itsHere || docstoc.horizontalnav[i].path == pageURL)
-      {
+      // if (itsHere || docstoc.horizontalnav[i].path == pageURL)
+      // {
         console.log('docstoc1112', docstoc[docstoc.horizontalnav[i].node])
         walkTree(docstoc[docstoc.horizontalnav[i].node]);
-      }
+      // }
     }
 
     console.log(outputLetNav)
