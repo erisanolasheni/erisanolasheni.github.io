@@ -141,6 +141,8 @@ function renderNav(docstoc) {
     // either glossary was true or no left nav has been built; default to glossary
     // show pages tagged with term and highlight term in left nav if applicable
     renderTagsPage()
+
+    alert(glossary)
     for (var i=0;i<glossary.length;i++)
     {
       var highlightGloss = '';
