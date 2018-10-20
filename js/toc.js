@@ -2,6 +2,7 @@
 layout: null
 ---
 
+var docstoc = {{ site.data.toc | jsonify }}
 
 var collectionsTOC = new Array()
 collectionsTOC["library"] = [
@@ -16,7 +17,6 @@ var currentSection;
 var sectionToHighlight;
 
 
-var docstoc = {{ site.data.toc | jsonify }}
 
 function renderTopicsByTagTable(tagToLookup,divID)
 {
